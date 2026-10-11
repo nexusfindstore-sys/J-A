@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#182a20">
+<meta name="description" content="Jackson & Arya invite you to celebrate their wedding.">
+<meta property="og:title" content="Jackson & Arya — Wedding Invitation">
+<meta property="og:description" content="Join us on 24 October 2026 at SMC Convention Center, Thumboor.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/memory-film.jpg">
+<title>Jackson & Arya | Wedding Invitation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="petals">
+</div>
+<section id="cover" class="cover">
+<div class="cover-photo">
+</div>
+<div class="cover-tint">
+</div>
+<div class="cover-copy">
+<p>WE ARE GETTING MARRIED</p>
+<h1>Jackson <em>&amp;</em> Arya</h1>
+<span>24 · 10 · 2026</span>
+<button id="openInvite">Tap to open <b>✦</b>
+</button>
+</div>
+</section>
+<main id="site" hidden>
+<button id="sound" class="sound">
+<span>♫</span>
+<b>Music</b>
+</button>
+<section class="hero">
+<div class="sun-glow">
+</div>
+<div class="hero-copy reveal">
+<p class="eyebrow">A LITTLE LOVE STORY</p>
+<p class="script">And suddenly, everything made sense.</p>
+<h2>
+<span id="nameOne">JACKSON</span>
+<i>&amp;</i>
+<span id="nameTwo">ARYA</span>
+</h2>
+<p id="message">With all our love and the blessings of our families, we invite you to celebrate the day our forever begins.</p>
+<div class="scroll">
+<i>
+</i> SCROLL TO BEGIN</div>
+</div>
+</section>
+<section class="story reveal">
+<div class="story-photo">
+<img id="storyImage" src="assets/mist-love.jpg" alt="Jackson and Arya smiling together">
+</div>
+<div>
+<p class="eyebrow">OUR FOREVER</p>
+<h2>Where every<br>road leads home.</h2>
+<p>We found in each other a love that feels like laughter, adventure, and the quietest kind of joy.</p>
+</div>
+</section>
+<section class="date-section">
+<div class="date-heading reveal">
+<p class="eyebrow">SAVE OUR DATE</p>
+<h2>One day.<br>All our tomorrows.</h2>
+</div>
+<div id="scratchBox" class="scratch-box reveal">
+<div class="date-card">
+<small id="weekday">SATURDAY</small>
+<strong id="day">24</strong>
+<span id="month">OCTOBER · 2026</span>
+<i>
+</i>
+<b id="time">06:00 PM</b>
+</div>
+<canvas id="scratchCanvas" aria-label="Scratch to reveal the wedding date">
+</canvas>
+<div id="scratchHint">Scratch to reveal <span>✦</span>
+</div>
+</div>
+</section>
+<section class="count-section">
+<div class="reveal">
+<p class="eyebrow">THE COUNTDOWN IS ON</p>
+<div id="countdown">
+</div>
+</div>
+</section>
+<section class="gallery">
+<p class="eyebrow reveal">CHAPTERS OF US</p>
+<div class="gallery-grid reveal">
+<figure class="wide">
+<img id="galleryOne" src="assets/forest-walk.jpg" alt="Jackson and Arya walking together">
+</figure>
+<figure>
+<img id="galleryTwo" src="assets/stone-walk.jpg" alt="Jackson and Arya together">
+</figure>
+<figure>
+<img id="galleryThree" src="assets/mist-ring.jpg" alt="Jackson and Arya sharing a moment">
+</figure>
+<figure class="tall">
+<img id="galleryFour" src="assets/tea-walk.jpg" alt="Jackson and Arya walking in the hills">
+</figure>
+</div>
+</section>
+<section class="venue">
+<div class="venue-photo">
+</div>
+<div class="venue-overlay">
+</div>
+<div class="venue-copy reveal">
+<p class="eyebrow">THE CELEBRATION</p>
+<h2>Meet us<br>there</h2>
+<div>✦</div>
+<h3 id="venueName">SMC CONVENTION CENTER</h3>
+<p id="venuePlace">THUMBOOR</p>
+<a id="map" href="https://maps.app.goo.gl/jZkDzYa3U6VSzTBF6" target="_blank" rel="noopener">Open in Maps <b>↗</b>
+</a>
+</div>
+</section>
+<section class="wishes">
+<div class="wishes-inner reveal">
+<p class="eyebrow">LEAVE A LITTLE LOVE</p>
+<h2 id="guestbookHeading">Send your wishes</h2>
+<p id="guestbookIntro">Leave Jackson &amp; Arya a little love for their new beginning.</p>
+<form id="wishForm">
+<input id="wishName" maxlength="48" placeholder="Your name *" required>
+<input id="wishRelation" maxlength="80" placeholder="How do you know the couple? (optional)">
+<textarea id="wishText" maxlength="280" placeholder="Your wishes for the couple… *" required></textarea>
+<button type="submit">Send wishes <span>♥</span></button>
+<small class="form-status" id="wishStatus" aria-live="polite"></small>
+</form>
+<div id="wishList" class="wish-list" aria-live="polite"><p class="empty">Loading wishes…</p></div>
+</div>
+</section>
+<section class="rsvp">
+<div class="rsvp-inner reveal">
+<p class="eyebrow">WILL YOU JOIN US?</p>
+<h2>Save your seat</h2>
+<p class="rsvp-copy">Your love brings us together.</p>
+<div class="attendance" id="attendance" aria-live="polite"><div><b>—</b><span>Guests Confirmed</span></div><div><b>—</b><span>Confirmed RSVPs</span></div><div><b>—</b><span>Unable to Attend</span></div></div>
+<form id="rsvpForm">
+<input id="rsvpName" maxlength="80" placeholder="Your name *" required>
+<input id="rsvpPhone" maxlength="25" type="tel" placeholder="Phone number (optional)">
+<label class="attendance-choice">Will you attend?<select id="rsvpAttendance"><option value="yes">Yes, happily attending</option><option value="no">Sorry, cannot attend</option></select></label>
+<label id="partyWrap" class="attendance-choice">Number of people <div class="stepper"><button type="button" id="minus">−</button><output id="partyCount">1</output><button type="button" id="plus">+</button></div></label>
+<textarea id="additionalNames" maxlength="300" placeholder="Names of additional attendees (optional)"></textarea>
+<textarea id="rsvpMessage" maxlength="280" placeholder="A note for the couple (optional)"></textarea>
+<button type="submit">Submit RSVP <span>✦</span></button>
+<small class="form-status" id="rsvpStatus" aria-live="polite"></small>
+</form>
+</div>
+</section>
+<footer>
+<div>J <span>✦</span> A</div>
+<p>We cannot wait to celebrate with you.</p>
+<small>JACKSON &amp; ARYA · 24.10.2026</small>
+</footer>
+</main>
+<audio id="music" loop preload="none">
+<source id="musicSource" src="assets/wedding-song.mp3" type="audio/mpeg">
+</audio>
+<script src="config.js">
+</script>
+<script src="script.js">
+</script>
+</body>
+</html>
